@@ -47,15 +47,20 @@
       margin-top: 40px;
       font-weight: bold;
     }
-    .links a {
+    .link-button {
+      border: 2px solid navy;
+      padding: 12px;
+      border-radius: 8px;
+      color: navy;
+      background: transparent;
+      text-decoration: none;
       display: block;
       margin: 10px 0;
-      font-size: 1.1em;
-      color: #007bff;
-      text-decoration: none;
+      transition: 0.3s;
     }
-    .links a:hover {
-      text-decoration: underline;
+    .link-button:hover {
+      background: rgba(0, 0, 128, 0.05);
+      text-decoration: none;
     }
     footer {
       margin-top: 40px;
@@ -84,53 +89,36 @@
     </div>
 
     <div class="links">
-<h3>Featured Links</h3>
-<div style="display: flex; flex-direction: column; gap: 10px;">
+      <h3>Featured Links</h3>
+      <a class="link-button" href="https://colab.research.google.com/drive/1wssljSYiLrMKIuFSIGHBOw8AO2lq-L4Z?usp=sharing" target="_blank">
+        <strong>Notebook: Gaussian Process from Scratch</strong><br>
+        <small>Colab notebook with code and math for GP from scratch</small>
+      </a>
 
-  <a href="https://colab.research.google.com/drive/1wssljSYiLrMKIuFSIGHBOw8AO2lq-L4Z?usp=sharing" target="_blank" style="text-decoration: none;">
-    <div style="background-color: #1f77b4; color: white; padding: 12px; border-radius: 8px;">
-      <strong>Notebook: Gaussian Process from Scratch</strong><br>
-      <small>Colab notebook with code and math for GP from scratch</small>
-    </div>
-  </a>
+      <a class="link-button" href="https://gaussianprocess.org/gpml/" target="_blank">
+        <strong>Rasmussen & Williams Book</strong><br>
+        <small>The classic textbook on Gaussian Processes</small>
+      </a>
 
-  <a href="https://gaussianprocess.org/gpml/" target="_blank" style="text-decoration: none;">
-    <div style="background-color: #2ca02c; color: white; padding: 12px; border-radius: 8px;">
-      <strong>Rasmussen & Williams Book</strong><br>
-      <small>The classic textbook on Gaussian Processes</small>
-    </div>
-  </a>
+      <a class="link-button" href="https://www.cs.toronto.edu/~duvenaud/cookbook/" target="_blank">
+        <strong>GP Kernel Cookbook</strong><br>
+        <small>Explains kernel choices and their effects</small>
+      </a>
 
-  <a href="https://www.cs.toronto.edu/~duvenaud/cookbook/" target="_blank" style="text-decoration: none;">
-    <div style="background-color: #ff7f0e; color: white; padding: 12px; border-radius: 8px;">
-      <strong>GP Kernel Cookbook</strong><br>
-      <small>Explains kernel choices and their effects</small>
-    </div>
-  </a>
+      <a class="link-button" href="https://distill.pub/2019/visual-exploration-gaussian-processes/" target="_blank">
+        <strong>Visual Exploration of GPs</strong><br>
+        <small>Interactive explanation of GP variance and behavior</small>
+      </a>
 
-  <a href="https://distill.pub/2019/visual-exploration-gaussian-processes/" target="_blank" style="text-decoration: none;">
-    <div style="background-color: #d62728; color: white; padding: 12px; border-radius: 8px;">
-      <strong>Visual Exploration of GPs</strong><br>
-      <small>Interactive explanation of GP variance and behavior</small>
-    </div>
-  </a>
+      <a class="link-button" href="https://github.com/carlosandrepaes/GaPP" target="_blank">
+        <strong>GaPP Library – GitHub</strong><br>
+        <small>Python library for Gaussian Process modeling</small>
+      </a>
 
-  <a href="https://github.com/carlosandrepaes/GaPP" target="_blank" style="text-decoration: none;">
-    <div style="background-color: #9467bd; color: white; padding: 12px; border-radius: 8px;">
-      <strong>GaPP Library – GitHub</strong><br>
-      <small>Python library for Gaussian Process modeling</small>
-    </div>
-  </a>
-
-  <a href="https://github.com/Nil-b0/GaussianProcess" target="_blank" style="text-decoration: none;">
-    <div style="background-color: #8c564b; color: white; padding: 12px; border-radius: 8px;">
-      <strong>This Project on GitHub</strong><br>
-      <small>More codes and write-up hosted here</small>
-    </div>
-  </a>
-
-</div>
-
+      <a class="link-button" href="https://github.com/Nil-b0/GaussianProcess" target="_blank">
+        <strong>This Project on GitHub</strong><br>
+        <small>More codes and write-up hosted here</small>
+      </a>
     </div>
 
     <footer>
@@ -140,4 +128,5 @@
 
 </body>
 </html>
+
 
